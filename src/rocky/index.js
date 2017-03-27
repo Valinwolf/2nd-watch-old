@@ -14,7 +14,7 @@ function formatDate(date) {
 function formatTime(date) {
 	var hour = date.getHours();
 	if(hour == 0){hour=12;}else if(hour > 12){hour-=12;}
-	return [[AddZero(hour), AddZero(date.getMinutes()), AddZero(date.getSeconds())].join(":"), date.getHours() >= 12 ? "PM" : "AM"].join(" ");
+	return [[hour, AddZero(date.getMinutes()), AddZero(date.getSeconds())].join(":"), date.getHours() >= 12 ? "PM" : "AM"].join(" ");
 }
 
 rocky.on('draw', function(e){
@@ -33,7 +33,7 @@ rocky.on('draw', function(e){
 	ctx.strokeRect(0,0,bgW,bgH);
 
 	ctx.strokeStyle = 'darkgreen';
-	ctx.strokeRect(5,5,bgW-10,bgH-10);
+	ctx.strokeRect(10,10,bgW-20,bgH-20);
 	
 	ctx.textAlign = 'center';
 	ctx.fillStyle = 'white';
