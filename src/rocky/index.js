@@ -29,25 +29,22 @@ rocky.on('draw', function(e){
 	ctx.clearRect(0,0,cliW,cliH);
 	ctx.lineWidth = 5;
 
-	ctx.strokeStyle = 'darkgreen';
+	ctx.strokeStyle = 'green';
 	ctx.strokeRect(0,0,bgW,bgH);
 
-	ctx.strokeStyle = 'green';
+	ctx.strokeStyle = 'darkgreen';
 	ctx.strokeRect(5,5,bgW-10,bgH-10);
-
-	ctx.strokeStyle = 'lightgreen';
-	ctx.strokeRect(10,10,bgW-20,bgH-20);
 	
 	ctx.textAlign = 'center';
 	ctx.fillStyle = 'white';
 	
 	// Time
 	ctx.font = '26px bold Leco-numbers-am-pm';
-	ctx.fillText(time, bgW / 2,30,bgW-15);
+	ctx.fillText(time, bgW / 2,30,bgW-10);
 	
 	// Date
 	ctx.font = '18px Gothic';
-	ctx.fillText(date, bgW / 2,bgH-40,bgW-15);
+	ctx.fillText(date, bgW / 2,bgH-40,bgW-10);
 });
 
 rocky.on('secondchange', function(e){
