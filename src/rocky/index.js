@@ -40,11 +40,11 @@ rocky.on('draw', function(e){
 	
 	// Time
 	ctx.font = '26px bold Leco-numbers-am-pm';
-	ctx.fillText(time, bgW / 2,30,bgW-10);
+	ctx.fillText(time, bgW / 2,30,bgW-12);
 	
 	// Date
 	ctx.font = '18px Gothic';
-	ctx.fillText(date, bgW / 2,bgH-40,bgW-10);
+	ctx.fillText(date, bgW / 2,bgH-40,bgW-12);
 });
 
 rocky.on('secondchange', function(e){
