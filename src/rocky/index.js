@@ -30,7 +30,7 @@ rocky.on('draw', function(e){
 	ctx.lineWidth = 5;
 
 	ctx.strokeStyle = 'green';
-	ctx.strokeRect(0,0,bgW,bgH);
+	ctx.strokeRect(2,2,bgW-4,bgH-4);
 
 	ctx.strokeStyle = 'darkgreen';
 	ctx.strokeRect(10,10,bgW-20,bgH-20);
