@@ -45,7 +45,7 @@ rocky.on('draw', function(e){
 	ctx.fillStyle = 'white';
 	
 	// Time
-	ctx.font = '28px bold Gothic';
+	ctx.font = '26px bold Leco-numbers-am-pm';
 	ctx.fillText(time, bgW / 2,30,bgW-15);
 	
 	// Date
