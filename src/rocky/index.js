@@ -14,7 +14,7 @@ function formatDate(date) {
 function formatTime(date) {
 	var hour = date.getHours();
 	if(hour == 0){hour=12;}else if(hour > 12){hour-=12;}
-	return [[AddZero(hour), AddZero(date.getMinutes())].join(":"), date.getHours() >= 12 ? "PM" : "AM"].join(" ");
+	return [[AddZero(hour), AddZero(date.getMinutes()), AddZero(date.getSeconds())].join(":"), date.getHours() >= 12 ? "PM" : "AM"].join(" ");
 }
 
 rocky.on('draw', function(e){
