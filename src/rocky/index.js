@@ -1,4 +1,5 @@
 var rocky = require('rocky');
+var UI = require('ui');
 
 function AddZero(num) {
     return (num >= 0 && num < 10) ? "0" + num : num + "";
@@ -28,17 +29,14 @@ rocky.on('draw', function(e){
 	var time = formatTime(d);
 	ctx.clearRect(0,0,cliW,cliH);
 	ctx.lineWidth = 5;
-	
-	// Red
-	ctx.strokeStyle = 'red';
+
+	ctx.strokeStyle = 'darkgreen';
 	ctx.strokeRect(0,0,bgW,bgH);
-	
-	// White
-	ctx.strokeStyle = 'white';
+
+	ctx.strokeStyle = 'green';
 	ctx.strokeRect(5,5,bgW-10,bgH-10);
-	
-	// Blue
-	ctx.strokeStyle = 'blue';
+
+	ctx.strokeStyle = 'lightgreen';
 	ctx.strokeRect(10,10,bgW-20,bgH-20);
 	
 	ctx.textAlign = 'center';
