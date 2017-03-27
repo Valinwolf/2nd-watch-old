@@ -34,13 +34,14 @@ rocky.on('draw', function(e){
 	
 	// White
 	ctx.strokeStyle = 'white';
-	ctx.strokeRect(5,5,bgW-5,bgH-5);
+	ctx.strokeRect(5,5,bgW-10,bgH-10);
 	
 	// Blue
 	ctx.strokeStyle = 'blue';
-	ctx.strokeRect(10,10,bgW-10,bgH-10);
+	ctx.strokeRect(10,10,bgW-20,bgH-20);
 	
 	ctx.textAlign = 'center';
+	ctx.fillStyle = 'white';
 	
 	// Time
 	ctx.font = '30px bolder Bitham';
