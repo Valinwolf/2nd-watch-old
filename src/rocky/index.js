@@ -21,7 +21,6 @@ rocky.on('draw', function(e){
 	var cliW = ctx.canvas.clientWidth;
 	var bgH = ctx.canvas.unobstructedHeight;
 	var bgW = ctx.canvas.unobstructedWidth;
-	var dim;
 	var d = new Date();
 	var date = formatDate(d);
 	var time = formatTime(d);
@@ -44,16 +43,12 @@ rocky.on('draw', function(e){
 	ctx.fillStyle = 'white';
 	
 	// Time
-	ctx.font = '30px bolder Bitham';
-	dim = ctx.measureText(time);
-	ctx.fillText(time, bgW / 2,15,bgW-15);
+	ctx.font = '24px bold Gothic';
+	ctx.fillText(time, bgW / 2,30,bgW-15);
 	
 	// Date
 	ctx.font = '18px Gothic';
-	dim = ctx.measureText(date);
-	ctx.fillText(date, bgW / 2,50,bgW-15);
-	
-	
+	ctx.fillText(date, bgW / 2,bgH-30,bgW-15);
 });
 
 rocky.on('secondchange', function(e){
