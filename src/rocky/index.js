@@ -14,16 +14,16 @@ rocky.on('draw', function(e){
 	ctx.lineWidth = 10;
 	
 	// Red
-	ctx.strokeStyle = 'red';
-	ctx.strokeRect(0,0,bgW,bgH);
+	//ctx.strokeStyle = 'red';
+	//ctx.strokeRect(0,0,bgW,bgH);
 	
 	// White
-	ctx.strokeStyle = 'white';
-	ctx.strokeRect(10,10,bgW-20,bgH-20);
+	//ctx.strokeStyle = 'white';
+	//ctx.strokeRect(10,10,bgW-20,bgH-20);
 	
 	// Blue
-	ctx.strokeStyle = 'blue';
-	ctx.strokeRect(20,20,bgW-40,bgH-40);
+	//ctx.strokeStyle = 'blue';
+	//ctx.strokeRect(20,20,bgW-40,bgH-40);
 	
 	ctx.textAlign = 'center';
 	
