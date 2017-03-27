@@ -12,7 +12,7 @@ function formatDate(date) {
 }
 
 function formatTime(date) {
-	return [AddZero(now.getHours()),  AddZero(now.getMinutes())].join(":"),  date.getHours() >= 12 ? "PM" : "AM"].join(" ");
+	return [AddZero(date.getHours()),  AddZero(date.getMinutes())].join(":"),  date.getHours() >= 12 ? "PM" : "AM"].join(" ");
 }
 
 rocky.on('draw', function(e){
