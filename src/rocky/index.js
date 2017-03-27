@@ -11,7 +11,7 @@ rocky.on('draw', function(e){
 	var date = d.toLocaleDateString();
 	var time = d.toLocaleTimeString();
 	ctx.clearRect(0,0,cliW,cliH);
-	ctx.lineWidth = 10;
+	//ctx.lineWidth = 10;
 	
 	// Red
 	//ctx.strokeStyle = 'red';
