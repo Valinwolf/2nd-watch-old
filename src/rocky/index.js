@@ -10,7 +10,7 @@ rocky.on('draw', function(e){
 	var d = new Date();
 	var date = d.toLocaleDateString();
 	var time = d.toLocaleTimeString();
-	ctx.clearRect(0,0,cliW,cliH);
+	//ctx.clearRect(0,0,cliW,cliH);
 	//ctx.lineWidth = 10;
 	
 	// Red
