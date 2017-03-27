@@ -14,7 +14,7 @@ function formatDate(date) {
 function formatTime(date) {
 	var hour = date.getHours();
 	if(hour == 0){hour=12;}else if(hour > 12){hour-=12;}
-	return [[hour, AddZero(date.getMinutes()), AddZero(date.getSeconds())].join(":"), date.getHours() >= 12 ? "PM" : "AM"].join(" ");
+	return [[hour, AddZero(date.getMinutes())].join(":"), date.getHours() >= 12 ? "PM" : "AM"].join(" ");
 }
 
 rocky.on('draw', function(e){
@@ -40,13 +40,13 @@ rocky.on('draw', function(e){
 	
 	// Time
 	ctx.font = '26px bold Leco-numbers-am-pm';
-	ctx.fillText(time, bgW / 2,30,bgW-12);
+	ctx.fillText(time, bgW / 2,30,bgW-10);
 	
 	// Date
 	ctx.font = '18px Gothic';
-	ctx.fillText(date, bgW / 2,bgH-40,bgW-12);
+	ctx.fillText(date, bgW / 2,bgH-40,bgW-10);
 });
 
-rocky.on('secondchange', function(e){
+rocky.on('minutechange', function(e){
 	rocky.requestDraw();
 });
