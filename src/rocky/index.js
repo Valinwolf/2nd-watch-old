@@ -1,9 +1,5 @@
 var rocky = require('rocky');
 
-rocky.on('secondchange', function(e){
-	rocky.requestDraw();
-});
-
 rocky.on('draw', function(e){
 	var ctx = e.context;
 	var cliH = ctx.canvas.clientHeight;
@@ -42,4 +38,8 @@ rocky.on('draw', function(e){
 	ctx.fillText(date, bgW / 2 - dim.width / 2,76,bgW);
 	
 	
+});
+
+rocky.on('secondchange', function(e){
+	rocky.requestDraw();
 });
